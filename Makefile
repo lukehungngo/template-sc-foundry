@@ -21,6 +21,7 @@ check_valid_key:
 
 .PHONY: init fmt build clean rebuild test test-gas trace remappings
 init: cmd-exists-forge
+	rm -rf lib/openzeppelin-contracts && rm -rf lib/forge-std
 	git submodule add https://github.com/OpenZeppelin/openzeppelin-contracts lib/openzeppelin-contracts && \
 	cd lib/openzeppelin-contracts && \
 	git checkout tags/v4.9.2
