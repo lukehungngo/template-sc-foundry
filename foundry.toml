@@ -8,7 +8,7 @@ verbosity = 2
 src = 'src'
 out = 'out'
 test = 'test/forge'
-script = 'script/forge'
+script = 'scripts/forge'
 libs = ['lib']
 
 [rpc_endpoints]
