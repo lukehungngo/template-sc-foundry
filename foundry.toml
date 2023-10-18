@@ -1,5 +1,5 @@
 [profile.default]
-solc_version = "0.8.13"
+solc_version = "0.8.17"
 ffi = false
 fuzz_runs = 256
 optimizer = true
@@ -30,6 +30,6 @@ polygon = { key = "${POLYGONSCAN_KEY}" }
 arbiscan_goerli = { key = "${ARBISCAN_KEY}", url = "https://api-goerli.arbiscan.io/api" }
 
 [fmt]
-line_length = 100
-tab_width = 2
+line_length = 120
+tab_width = 4
 bracket_spacing = true

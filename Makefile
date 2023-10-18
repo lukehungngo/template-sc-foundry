@@ -21,8 +21,14 @@ check_valid_key:
 
 .PHONY: init fmt build clean rebuild test test-gas trace remappings
 init: cmd-exists-forge
-	git submodule update --init --recursive
-	git update-index --assume-unchanged playground/*
+	git submodule add https://github.com/OpenZeppelin/openzeppelin-contracts lib/openzeppelin-contracts && \
+	cd lib/openzeppelin-contracts && \
+	git checkout tags/v4.9.2
+
+	git submodule add https://github.com/foundry-rs/forge-std lib/forge-std && \
+	cd lib/forge-std && \
+	git checkout tags/v1.6.0
+
 	forge install
 
 fmt: cmd-exists-forge
