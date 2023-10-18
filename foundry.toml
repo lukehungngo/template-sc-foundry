@@ -24,10 +24,10 @@ mumbai = "${MUMBAI_RPC}"
 local = "${LOCAL_RPC}"
 
 [etherscan]
-mainnet = { key = "${ETHERSCAN_MAINNET_KEY}" }
-arbitrum = { key = "${ARBISCAN_KEY}" }
-polygon = { key = "${POLYGONSCAN_KEY}" }
-arbiscan_goerli = { key = "${ARBISCAN_KEY}", url = "https://api-goerli.arbiscan.io/api" }
+ethereum = { key = "${ETHEREUM_VERIFY_KEY}", url = "https://api.etherscan.io/api" }
+arbitrum = { key = "${ARBITRUM_VERIFY_KEY}" }
+polygon = { key = "${POLYGON_VERIFY_KEY}" }
+arbiscan_goerli = { key = "${ARBITRUM_VERIFY_KEY}", url = "https://api-goerli.arbiscan.io/api" }
 
 [fmt]
 line_length = 120
