@@ -61,4 +61,4 @@ fork: cmd-exists-anvil
 
 .PHONY: deploy
 deploy: cmd-exists-forge
-	./script/sh/deploy.sh
+	./script/sh/deploy.sh $(NETWORK)
