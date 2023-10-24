@@ -51,3 +51,4 @@ buf.gen.yaml
 *.spkg
 *.test
 __debug_bin
+deployments/localhost/**
